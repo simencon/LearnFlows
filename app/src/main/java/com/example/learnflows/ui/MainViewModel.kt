@@ -43,7 +43,7 @@ class MainViewModel @Inject constructor(
         repository.deleteTeamMember(teamMember)
     }
 
-    private val _currentMember = MutableStateFlow<CurrentMember>(NoCurrentMember)
+    private val _currentMember = MutableStateFlow(NoCurrentMember)
 
     private val _teamF = repository.teamComplete()
 

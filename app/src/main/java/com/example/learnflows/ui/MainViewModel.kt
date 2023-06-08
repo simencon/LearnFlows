@@ -59,7 +59,7 @@ class MainViewModel @Inject constructor(
     }
 
     fun syncTeam() {
-//        ToDo add some function to play with Flows
+//        ToDo add some function to play with Flows (like add/remove members)
         viewModelScope.launch {
             isLoadingInProgress.value = true
             isLoadingInProgress.value = false

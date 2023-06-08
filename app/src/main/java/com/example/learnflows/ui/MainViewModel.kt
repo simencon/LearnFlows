@@ -62,7 +62,6 @@ class MainViewModel @Inject constructor(
 //        ToDo add some function to play with Flows
         viewModelScope.launch {
             isLoadingInProgress.value = true
-            delay(4000L)
             isLoadingInProgress.value = false
             isNetworkError.value = true
         }
